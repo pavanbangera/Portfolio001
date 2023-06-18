@@ -1,0 +1,31 @@
+.web-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.web-option {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.web-option:last-child {
+  margin-right: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.web-icon {
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+  width: 20px;
+}
+
+@media only screen and (max-width: 1224px) {
+  .web-option {
+    margin-right: 10px;
+    padding: 5px 5px;
+  }
+}

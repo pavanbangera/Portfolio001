@@ -1,0 +1,125 @@
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin: 10vw auto 0 auto;
+  background-color: rgb(235, 235, 235);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.skills-title {
+  font-size: 2.8vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #1b4d89;
+}
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 10px;
+}
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.skill-heading,
+.skill-percentage {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: black;
+}
+.skill-bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 10px;
+  height: 10px;
+  padding: 0 2px;
+  background-color: rgba(112, 112, 112, 0.4);
+  backdrop-filter: blur(2px);
+}
+.progress-bar div {
+  height: 7px;
+  width: 0;
+  border-radius: 10px;
+  background: linear-gradient(to right, #e5405e 0%, #ffdb3a 45%, #3fffa2 100%);
+  animation: progress-bar 3s;
+}
+
+#html {
+  width: 95%;
+}
+#css {
+  width: 85%;
+}
+#js {
+  width: 90%;
+}
+#php {
+  width: 75%;
+}
+#node-js {
+  width: 65%;
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .skills-box {
+    margin: 15vw auto 0 auto;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .skills-box {
+    margin: 25vw auto 5vw auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease-out;
+  }
+  .skills-box:hover {
+    background-color: rgba(244, 81, 30, 0.1);
+  }
+  .skills-title {
+    color: #5cdb95;
+    font-size: 6vw;
+  }
+  .skill-heading,
+  .skill-percentage {
+    font-size: 4vw;
+    color: #e8a87c;
+  }
+  .progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .progress-bar div {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .skills-box {
+    margin: 40vw auto 10vw auto;
+    background-color: #52ab98;
+  }
+}

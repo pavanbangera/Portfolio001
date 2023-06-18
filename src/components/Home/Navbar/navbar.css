@@ -1,0 +1,78 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  /* overflow: hidden; */
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Shizuru", cursive;
+  text-transform: uppercase;
+}
+.menu {
+  display: flex;
+}
+.web-menu {
+  display: flex;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-toggle {
+  cursor: pointer;
+  z-index: 99;
+  position: relative;
+  right: 20px;
+  transition: all 2s ease;
+}
+.hambargur {
+  width: 30px;
+  transition: all 0.5s ease;
+}
+@media only screen and (max-width: 1224px) {
+  .logo {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 20px;
+  }
+  .web-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .logo {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav-bar {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
